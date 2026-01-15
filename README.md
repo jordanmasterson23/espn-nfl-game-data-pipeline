@@ -1,4 +1,4 @@
-# NFL Data Engineering Pipeline
+# ESPN Hidden API NFL Game Data Pipeline
 
 ## Overview
 This is an end to end data pipeline, designed to ingest, transform, and model NFL Game data from the ESPN Hidden API.
