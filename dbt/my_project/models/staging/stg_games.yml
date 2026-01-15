@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_games
+    description: "Staging model for game info in NFL games"
+    columns:
+      - name: game_id
+        tests:
+          - not_null
+          - unique

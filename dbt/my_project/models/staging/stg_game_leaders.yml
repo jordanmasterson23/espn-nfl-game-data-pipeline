@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_game_leaders
+    description: "Staging model for NFL game leaders"
+    columns:
+      - name: game_id
+        tests:
+          - not_null
+          - unique
+
+      - name: team_id
+        tests:
+          - not_null

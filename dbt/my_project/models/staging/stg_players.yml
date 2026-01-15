@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_players
+    description: "Staging model for NFL players"
+    columns:
+      - name: athlete_id
+        tests:
+          - not_null
+          - unique

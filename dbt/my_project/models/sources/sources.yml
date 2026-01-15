@@ -1,0 +1,82 @@
+version: 2
+
+sources:
+  - name: nfl_game_data
+    schema: nfl_game_data
+    database: db
+    tables:
+      - name: athletes
+        columns:
+          - name: athlete_id
+          - name: full_name
+          - name: display_name
+          - name: short_name
+          - name: jersey
+          - name: position
+          - name: headshot_url
+          - name: active
+      - name: broadcasts
+        columnns:
+          - name: game_id
+          - name: network
+          - name: market
+          - name: region
+          - name: language
+      - name: game_leaders
+        columns:
+          - name: game_id
+          - name: team_id
+          - name: athlete_id
+          - name: category
+          - name: stat_value
+          - name: display_value
+      - name: game_odds
+        columns:
+          - name: game_id
+          - name: provider
+          - name: spread
+          - name: over_under
+          - name: details
+          - name: favorite_team_id
+      - name: game_teams
+        columns:
+          - name: game_id
+          - name: team_id
+          - name: home_away
+          - name: score
+          - name: record_type
+          - name: record_summary
+      - name: games
+        columns:
+          - name: game_id
+          - name: uid
+          - name: game_date
+          - name: name
+          - name: short_name
+          - name: status
+          - name: status_detail
+          - name: period
+          - name: venue_id
+          - name: attendance
+          - name: neutral_site
+      - name: teams
+        columns:
+          - name: team_id
+          - name: uid
+          - name: location
+          - name: name
+          - name: abbreviation
+          - name: display_name
+          - name: short_display_name
+          - name: color
+          - name: alternate_color
+          - name: logo_url
+          - name: is_active
+      - name: venues
+        columns:
+          - name: venue_id
+          - name: name
+          - name: city
+          - name: state
+          - name: indoor
+          - name: capacity

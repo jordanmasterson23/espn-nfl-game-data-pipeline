@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_game_odds
+    description: "Staging model for NFL game odds"
+    columns:
+      - name: game_id
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_teams
+    description: "Staging model for NFL teams"
+    columns:
+      - name: team_id
+        tests:
+          - not_null
+          - unique

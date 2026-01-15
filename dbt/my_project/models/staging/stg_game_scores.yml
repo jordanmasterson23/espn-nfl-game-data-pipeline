@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_game_scores
+    description: "Staging model for NFL game scores"
+    columns:
+      - name: game_id
+        tests:
+          - not_null
+          - unique
+
+      - name: team_id
+        tests:
+          - not_null
+
+      - name: home_away
+        tests:
+          - accepted_values:
+              values: ['home', 'away']
