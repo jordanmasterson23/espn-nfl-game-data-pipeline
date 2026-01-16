@@ -34,10 +34,10 @@ with dag:
         command='run',
         working_dir='/usr/app',
         mounts=[
-            Mount(source='/home/roronoajordan/repos/nfl-data-project/dbt/my_project',
+            Mount(source='/home/roronoajordan/repos/espn-nfl-game-data-pipeline/dbt/my_project/',
                target='/usr/app',
                type='bind'),
-            Mount(source='/home/roronoajordan/repos/nfl-data-project/dbt/myproject/profiles.yml',
+            Mount(source='/home/roronoajordan/repos/espn-nfl-game-data-pipeline/dbt/profiles.yml',
                target='/root/.dbt/profiles.yml',
                type='bind')
         ],
