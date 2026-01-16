@@ -37,7 +37,7 @@ with dag:
             Mount(source='/home/roronoajordan/repos/nfl-data-project/dbt/my_project',
                target='/usr/app',
                type='bind'),
-            Mount(source='/home/roronoajordan/repos/nfl-data-project/dbt/profiles.yml',
+            Mount(source='/home/roronoajordan/repos/nfl-data-project/dbt/myproject/profiles.yml',
                target='/root/.dbt/profiles.yml',
                type='bind')
         ],
